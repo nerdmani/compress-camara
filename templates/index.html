@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compressor de PDF</title>
+</head>
+<body>
+    <h1>Comprimir PDF</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="seletor">Selecione o prefixo:</label>
+        <select name="prefix" id="seletor">
+            <option value="camara-tremembe-">Câmara Tremembé</option>
+            <option value="camara-areias-">Câmara Areias</option>
+        </select><br><br>
+        
+        <label for="pdf">Carregar arquivo PDF:</label>
+        <input type="file" name="pdf" id="pdf" required><br><br>
+        
+        <input type="submit" value="Comprimir">
+    </form>
+</body>
+</html>
